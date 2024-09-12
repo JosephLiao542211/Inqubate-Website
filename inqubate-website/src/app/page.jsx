@@ -1,4 +1,4 @@
-import FirstSection from "./FirstSection"
+import FirstSection from "./Landing"
 
 export default function Home() {
     return (
