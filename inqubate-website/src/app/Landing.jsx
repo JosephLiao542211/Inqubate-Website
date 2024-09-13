@@ -4,7 +4,8 @@ import Navigation from "./Navigation"
 export default function Landing(){
     return (
         <>
-            <nav className="px-20 py-6 flex">
+        <img src="landing-morph-lines.svg" alt="webs" className="-z-50 absolute" />
+            <nav className="px-20 py-6 flex bg-none">
                 <Image src="inqubate.svg" alt="inqubate" width={250} height={250} className=""/>
                 <div className="grow flex gap-5 justify-center">
                     <Navigation href="#home">Home</Navigation>
@@ -32,15 +33,28 @@ export default function Landing(){
             width={900}
             height={700}
             alt="red gradient"
-            className="absolute -z-50 top-0"
+            className="absolute -z-30 top-0"
             />
             <Image
             src="blue-gradient.svg"
             width={1000}
             height={700}
             alt="blue gradient"
-            className="absolute -z-50 right-0"
+            className="absolute -z-30 right-0 top-0"
             />
+            <div className="flex h-[80vh] items-center justify-around">
+                <div>
+                <h1 className="font-bold text-6xl w-96 leading-snug">
+                    Queen&apos;s <br/> #1 Incubator
+                </h1>
+                <p>🚀 Innovate, Collaborate, & Succeed</p>
+                </div>
+                <div className="grow-1 flex flex-col gap-16">
+                    <Image src="innovate.svg" width={500} height={500} alt="INNOVATE"/>
+                    <Image src="disrupt.svg" width={500} height={500} alt="DISRUPT"/>
+                    <Image src="create.svg" width={500} height={500} alt="CREATE"/>
+                </div>
+            </div>
         </>
     )
 }
