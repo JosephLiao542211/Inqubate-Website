@@ -4,6 +4,7 @@ import Navigation from "./Navigation"
 export default function Landing(){
     return (
         <>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="landing-morph-lines.svg" alt="webs" className="-z-50 absolute" />
             <nav className="px-20 py-6 flex bg-none">
                 <Image src="inqubate.svg" alt="inqubate" width={250} height={250} className=""/>
