@@ -1,5 +1,6 @@
 "use client"; // Ensure this component runs on the client side
 
+import dynamic from 'next/dynamic';
 import React, { useEffect, useRef } from 'react';
 import $ from 'jquery';
 import 'slick-carousel/slick/slick.css';
@@ -23,7 +24,7 @@ const ImageSlider = () => {
       $(sliderRef.current).slick({
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 400,
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
@@ -91,17 +92,17 @@ const ImageSlider = () => {
           transform: none; /* Remove centering transform */
         }
         .slick-dots li {
-          margin-right: 4px; /* Add space between dots */
+          margin-right: 1px; /* Add space between dots */
         }
         .slick-dots li button:before {
           font-size: 9px; /* Customize dot size */
         }
         .slick-dots li.slick-active button:before {
-          color: red; /* Active dot color */
+          color: grey; /* Active dot color */
         }
       `}</style>
     </div>
   );
 };
 
-export default ImageSlider;
+export default dynamic(() => Promise.resolve(ImageSlider), { ssr: false });
