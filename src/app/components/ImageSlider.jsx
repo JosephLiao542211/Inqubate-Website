@@ -96,9 +96,10 @@ const ImageSlider = () => {
         }
         .slick-dots li button:before {
           font-size: 9px; /* Customize dot size */
+          color: white;
         }
         .slick-dots li.slick-active button:before {
-          color: grey; /* Active dot color */
+          color: White; /* Active dot color */
         }
       `}</style>
     </div>

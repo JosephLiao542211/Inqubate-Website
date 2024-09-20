@@ -21,27 +21,27 @@ export default function Home() {
   
 
     {/* Main about US top section */}
-    <h1 className="relative left-[180px] text-6xl font-bold mb-4">About Us</h1>
+    <h1 className="relative max-w-[1000px] left-[180px] text-6xl font-bold mb-4">About Us</h1>
     <div className="relative left-[180px] pt-0 pb-4 pl-0 pr-30 rounded-md shadow-sm w-1/2 h-full">
       <p className="text-left text-[13px] font-arial text-white">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae inventore asperiores ducimus, ipsam cupiditate quisquam optio officia tenetur culpa, illo similique voluptates totam, at nihil delectus ab hic explicabo earum! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
       </p>
     </div>
 
-    <div className="relative left-[180px] flex justify-start pt-4">
-      <Button className="text-white border border-white rounded-[12px] hover:bg-gray-100 px-4 py-2"/>
+    <div className="absolute max-w-[1000px] left-[180px] flex justify-start pt-4 overflow-visible z-10 ">
+      <Button  />
     </div>
 
     
 
     {/*Bottom sections */}
 
-    <div className="relative pt-16 right-[0px] bottom-[60px] max-w-[1440px] max-h-[1000px] items-start overflow-visible ">
+    <div className="relative pt-16 right-[0px] bottom-[-20px] max-w-[1440px]  items-start  ">
 
     {/*image slider */}
 
     <div className="absolute top-[115px] left-[-20px]  "> 
-    <div className="absolute left-[194px] bottom-[187px]  w-[397px] h-[517px] bg-white/30 backdrop-lg pl-4 pt-4 pb-4 rounded-[15px] overflow-visible ">
+    <div className="absolute left-[194px] bottom-[187px]  w-[397px] h-[517px] bg-white/30 backdrop-lg pl-4 pt-4 pb-4 rounded-[15px] ">
     </div>
       <ImageSliders className="relative" />
 
@@ -49,11 +49,11 @@ export default function Home() {
 
 
     {/*vector on the background*/}
-    <div className="absolute  left-[250px] top-[-450px] -z-10  w-[1440px] h-[800px] ">
+    <div className="absolute  left-[250px] top-[-450px] -z-10  w-[1000px] h-[800px] ">
       <img
         src="/images/Vector0.svg"
         alt="Image"
-        className=" object-cover overflow-visible"
+        className=" object-cover "
       />
     </div>
 
@@ -63,7 +63,7 @@ export default function Home() {
       <img
         src="/images/Vector1.svg"
         alt="Image"
-        className=" object-cover overflow-visible"
+        className=" object-cover "
       />
     </div>
       
@@ -80,7 +80,7 @@ export default function Home() {
       
 
     {/*cone images on the side*/}
-      <div className=" absolute top-[320px] left-[600px] overflow-visible  -z-10" >
+      <div className=" absolute top-[320px] left-[600px]   -z-10" >
         <img
           src="/images/Cone1.svg"
           alt="Image"
@@ -88,7 +88,7 @@ export default function Home() {
         />
       </div>
 
-      <div className=" absolute top-[240px] left-[780px] overflow-visible -z-10"  >
+      <div className=" absolute top-[240px] left-[780px]  -z-10"  >
         <img
           src="/images/Cone2.svg"
           alt="Image"
@@ -96,7 +96,7 @@ export default function Home() {
         />
       </div>
 
-      <div className=" absolute top-[175px] left-[950px] overflow-visible  -z-10" >
+      <div className=" absolute top-[175px] left-[950px]   -z-10" >
         <img
           src="/images/Cone3.svg"
           alt="Image"
