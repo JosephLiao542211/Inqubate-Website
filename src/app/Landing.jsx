@@ -1,5 +1,7 @@
 import Image from "next/image"
 import Navigation from "./Navigation"
+import Sponsors from "./sponsors"
+import Tube from "./Tube"
 
 export default function Landing(){
     return (
@@ -20,15 +22,7 @@ export default function Landing(){
                     Contact Us
                 </a>
             </nav>
-            <Image
-            src="tube.svg"
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{ width: '100%', height: 'auto' }} 
-            alt="tube"
-            className="absolute -z-10"
-            />
+            <Tube/>
             <Image
             src="red-gradient.svg"
             width={900}
@@ -44,16 +38,28 @@ export default function Landing(){
             className="absolute -z-30 right-0 top-0"
             />
             <div className="flex h-[80vh] items-center justify-around">
-                <div>
-                <h1 className="font-bold text-6xl w-96 leading-snug">
-                    Queen&apos;s <br/> #1 Incubator
-                </h1>
-                <p>🚀 Innovate, Collaborate, & Succeed</p>
+                <div className="animate-fade-in">
+                    <h1 className="font-bold text-6xl w-96 leading-snug">
+                        Queen&apos;s <br/> #1 Incubator
+                    </h1>
+                    <p>🚀 Innovate, Collaborate, & Succeed</p>
                 </div>
+
                 <div className="grow-1 flex flex-col gap-16">
-                    <Image src="innovate.svg" width={500} height={500} alt="INNOVATE"/>
+                    {/* <Image src="innovate.svg" width={500} height={500} alt="INNOVATE"/>
                     <Image src="disrupt.svg" width={500} height={500} alt="DISRUPT"/>
-                    <Image src="create.svg" width={500} height={500} alt="CREATE"/>
+                    <Image src="create.svg" width={500} height={500} alt="CREATE"/> */}
+
+                    <Image className="animate-fade-in" src="innovate-disrupt-create.svg" width={500} height={500} alt="INNOVATE DISRUPT CREATE"/>
+                </div>
+            </div>
+            <div>
+                <h1 className="text-center text-stone-300 text-2xl font-thin tracking-widest mb-8 mt-16">PAST PARTNERS AND SPONSORS</h1>
+                <div className="slider-container overflow-hidden whitespace-nowrap">
+                    <div className="flex gap-6 slider animate-slider">
+                        <Sponsors></Sponsors>
+                        <Sponsors></Sponsors>
+                    </div>
                 </div>
             </div>
         </>
