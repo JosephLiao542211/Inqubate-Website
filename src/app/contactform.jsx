@@ -1,11 +1,13 @@
 "use client";
-import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-
+import React, { useRef, useState } from 'react';
 
 
 export const ContactUs = () => {
+
+  const [isSubmitted, setIsSubmitted] = useState(false); // Change state to track submission
   const form = useRef();
+
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -17,6 +19,7 @@ export const ContactUs = () => {
       .then(
         () => {
           console.log('SUCCESS!');
+          setIsSubmitted(true);
         },
         (error) => {
           console.log('FAILED...', error.text);
@@ -52,8 +55,8 @@ export const ContactUs = () => {
     <img src="/message.svg" alt="Message Icon" className="w-[500px] h-28 relative left-[200px] top-[-30px] pl-[20px]"  /> {/* Use img tag for SVG */}
     <input
         type="submit"
-        value="Submit"
-        className=" absolute border border-white text-white p-2 rounded-[10px] cursor-pointer w-44 h-12 "
+        value={isSubmitted ? "Completed" : "Submit"} // Toggle between 'Submit' and 'Completed'
+        className="font-bold absolute border border-white text-white pb-1 rounded-[10px] cursor-pointer w-44 h-12 transition-transform duration-400 hover:scale-110 hover:bg-slate-900"
     />
 
 
