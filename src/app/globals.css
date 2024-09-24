@@ -28,18 +28,6 @@
 
 
 
-html {
-  margin: 0;
-  max-width: 1440px;
-
-}
-
-body {
-  margin: 0;
-  padding: 0; /* This removes any default padding */
-  max-width: 1440px;
-  overflow-x: hidden; /* Prevent horizontal overflow */
-}
 
 @layer utilities {
   .text-balance {
