@@ -9,9 +9,9 @@ import 'slick-carousel'; // Ensure this import is correctly positioned
 
 // List of images for the slider
 const images = [
-  '/images/image1.svg',
-  '/images/image2.svg',
-  '/images/image3.svg',
+  '/images/inqubate_photo.png',
+  '/images/image2.png',
+  '/images/image4.png',
 ];
 
 const ImageSlider = () => {

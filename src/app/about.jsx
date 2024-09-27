@@ -5,9 +5,9 @@ import "tailwindcss/tailwind.css"
 
 const About = () => {
   const images = [
-  { URL: '/images/image1.svg' },
-  { URL: '/images/image2.svg' },
-  { URL: '/images/image3.svg' },
+  { URL: '/images/inqubate_photo.png' },
+  { URL: '/images/image2.png' },
+  { URL: '/images/image4.png' },
   { URL: '/images/Cone1.svg' },
   { URL: '/images/Cone2.svg' },
   { URL: '/images/Cone23.svg' },
@@ -49,7 +49,7 @@ const About = () => {
 
 
     {/*vector on the background*/}
-    <div className="absolute  left-[425px] top-[-450px] z-5  w-[1000px] h-[800px] ">
+    <div className="absolute  left-[425px] top-[-460px] z-2  w-[1000px] h-[800px] ">
       <img
         src="/images/Vector0.svg"
         alt="Image"
@@ -80,7 +80,7 @@ const About = () => {
       
 
     {/*cone images on the side*/}
-      <div className=" absolute top-[335px] left-[580px]  -z-10" >
+      <div className=" absolute top-[335px] left-[580px]  z-10" >
         <img
           src="/images/Cone1.svg"
           alt="Image"
@@ -88,7 +88,7 @@ const About = () => {
         />
       </div>
 
-      <div className=" absolute top-[255px] left-[810px] -z-10"  >
+      <div className=" absolute top-[255px] left-[810px] z-10"  >
         <img
           src="/images/Cone2.svg"
           alt="Image"
@@ -96,7 +96,7 @@ const About = () => {
         />
       </div>
 
-      <div className=" absolute top-[155px] left-[1005px]  -z-10" >
+      <div className=" absolute top-[155px] left-[1005px]  z-10" >
         <img
           src="/images/Cone3.svg"
           alt="Image"
