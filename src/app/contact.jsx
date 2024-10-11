@@ -27,7 +27,7 @@ const Contact = () => {
       <img
         src="/loop.svg"
         alt="Image"
-        className=" w-[1200px] h-[1150px]"
+        className=" w-[1200px] h-[1149px]"
       />
     </div>
 
