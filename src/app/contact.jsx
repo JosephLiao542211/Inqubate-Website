@@ -19,8 +19,16 @@ const Contact = () => {
     </p>
     </div>
 
-    <div classname="absolute left-[200px] ">    
+    <div classname="absolute left-[200px] max-w-[1000px]">    
       <Contactform />
+    </div>
+
+    <div className="absolute  left-[400px] top-[-210px] z-2   ">
+      <img
+        src="/loop.svg"
+        alt="Image"
+        className=" w-[1200px] h-[1150px]"
+      />
     </div>
 
 

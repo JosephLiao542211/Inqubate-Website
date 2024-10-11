@@ -28,7 +28,7 @@ export const ContactUs = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail} className="flex flex-col space-y-4 relative left-[350px]">
+    <form ref={form} onSubmit={sendEmail} className="flex flex-col space-y-4 relative left-[350px] max-w-[1000px]">
     
 =    <input
       type="text"
