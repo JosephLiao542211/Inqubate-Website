@@ -22,9 +22,6 @@ body {
   color: white;
 }
 
-
-
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;

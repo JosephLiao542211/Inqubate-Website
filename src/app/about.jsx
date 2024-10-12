@@ -17,7 +17,7 @@ const About = () => {
   ];
 
   return (
-    <div className=" min-h-screen max-w-[1536px]">
+    <div className=" min-h-screen mb-36 overflow-hidden">
   
 
     {/* Main about US top section */}
