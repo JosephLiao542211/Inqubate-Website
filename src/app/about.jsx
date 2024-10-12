@@ -49,7 +49,7 @@ const About = () => {
 
 
     {/*vector on the background*/}
-    <div className="absolute  left-[425px] top-[-460px] z-2  w-[1000px] h-[800px] ">
+    <div className="absolute  left-[425px] top-[-400px] z-2  w-[1000px] h-[800px] ">
       <img
         src="/images/Vector0.svg"
         alt="Image"
@@ -61,7 +61,7 @@ const About = () => {
     {/*vector on the background*/}
     <div className="absolute  top-[15px] -z-10  w-[1536px] h-[710px] ">
       <img
-        src="/images/Vector1.svg"
+        src="/images/Vector 11.svg"
         alt="Image"
         className=" object-cover w-[1536px] h-[715px]"
       />
@@ -71,7 +71,7 @@ const About = () => {
     
 
     {/*text over lay on the sides*/}
-    <div className="absolute  w-[240px] h-[190px] top-[425px] left-[1025px] bg-white/10 backdrop-blur-sm pl-4 pt-4 pb-4 rounded-[20px] overflow-visible ">
+    <div className="absolute  w-[240px] z-30 h-[190px] top-[425px] left-[1025px] bg-white/10 backdrop-blur-sm pl-4 pt-4 pb-4 rounded-[20px] overflow-visible ">
         <p className=" pr-4 pb-4 text-left w-[230px] text-[14px] font-arial text-white">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae inventore asperiores ducimus, ipsam cupiditate quisquam optio officia tenetur culpa,
         </p>
@@ -80,7 +80,7 @@ const About = () => {
       
 
     {/*cone images on the side*/}
-      <div className=" absolute top-[335px] left-[580px]  z-10" >
+      <div className=" absolute top-[335px] left-[575px]  z-10" >
         <img
           src="/images/Cone1.svg"
           alt="Image"
@@ -92,11 +92,11 @@ const About = () => {
         <img
           src="/images/Cone2.svg"
           alt="Image"
-          className="w-[300px] h-[300px] object-cover"
+          className="w-[310px] h-[310px] object-cover"
         />
       </div>
 
-      <div className=" absolute top-[155px] left-[1005px]  z-10" >
+      <div className=" absolute top-[155px] left-[1010px]  z-10" >
         <img
           src="/images/Cone3.svg"
           alt="Image"
