@@ -11,10 +11,14 @@
   "dependencies": {
     "jquery": "^3.7.1",
     "next": "^14.2.13",
+    "@react-three/drei": "^9.112.0",
+    "@react-three/fiber": "^8.17.7",
+    "parallax-js": "^3.1.0",
     "react": "^18",
     "react-dom": "^18",
     "react-slick": "^0.30.2",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "three": "^0.168.0"
   },
   "devDependencies": {
     "eslint": "^8",
