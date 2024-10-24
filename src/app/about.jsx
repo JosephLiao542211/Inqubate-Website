@@ -71,9 +71,9 @@ const About = () => {
     
 
     {/*text over lay on the sides*/}
-    <div className="absolute  w-[240px] z-30 h-[190px] top-[425px] left-[1025px] bg-white/10 backdrop-blur-sm pl-4 pt-4 pb-4 rounded-[20px] overflow-visible ">
-        <p className=" pr-4 pb-4 text-left w-[230px] text-[14px] font-arial text-white">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae inventore asperiores ducimus, ipsam cupiditate quisquam optio officia tenetur culpa,
+    <div className="absolute  w-[280px] z-30 h-[190px] top-[420px] left-[1025px] bg-white/15 backdrop-blur-md pl-4 pt-4 pb-4 rounded-[40px] overflow-visible ">
+        <p className=" pr-4 pb-4 text-left w-[280px] text-[14px] font-arial text-white">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae inventore asperiores ducimus, ipsam cupiditate quisquam optio officia tenetur culpa, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus tempore iure.
         </p>
     </div>
 
