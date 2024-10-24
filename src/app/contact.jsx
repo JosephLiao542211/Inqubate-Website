@@ -23,14 +23,6 @@ const Contact = () => {
       <Contactform />
     </div>
 
-    <div className="absolute  left-[400px] top-[-210px] z-2   ">
-      <img
-        src="/loop.svg"
-        alt="Image"
-        className=" w-[1201px] h-[1149px]"
-      />
-    </div>
-
 
 </div>
  

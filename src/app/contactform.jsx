@@ -57,6 +57,7 @@ export const ContactUs = () => {
         type="submit"
         value={isSubmitted ? "Completed" : "Submit"} // Toggle between 'Submit' and 'Completed'
         className="font-bold absolute border border-white text-white pb-1 rounded-[10px] cursor-pointer w-44 h-12 transition-transform duration-400 hover:scale-110 hover:bg-slate-900"
+        disabled={isSubmitted} // Disable the button after submission
     />
 
 
