@@ -21,7 +21,7 @@ const About = () => {
   
 
     {/* Main about US top section */}
-    <h1 className="relative max-w-[1000px] left-[180px] text-6xl font-bold mb-4">About Us</h1>
+    <h1 className="relative max-w-[1000px] left-[180px] text-6xl font-bold mb-4" id="about">About Us</h1>
     <div className="relative left-[180px] pt-0 pb-4 pl-0 pr-30 rounded-md shadow-sm w-1/2 h-full">
       <p className="text-left text-[13px] font-arial text-white">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae inventore asperiores ducimus, ipsam cupiditate quisquam optio officia tenetur culpa, illo similique voluptates totam, at nihil delectus ab hic explicabo earum! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
