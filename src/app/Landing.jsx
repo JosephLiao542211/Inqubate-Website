@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react"
 
 import Image from "next/image"
 import Navigation from "./Navigation"
-import Sponsors from "./sponsors"
+import Sponsors from "./Sponsors"
 import Tube from "./Tube"
 
 export default function Landing(){
