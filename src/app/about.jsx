@@ -25,7 +25,7 @@ const About = () => {
             </h1>
             <div className="relative left-[180px] pt-0 pb-4 pl-0 pr-30 rounded-md shadow-sm w-1/2 h-full">
                 <p className="text-left text-[13px] font-arial text-white">
-                    inQUbate is the premier product-incubator at Queen's
+                    inQUbate is the premier product-incubator at Queen`&apos`s
                     University, dedicated to developing the next generation of
                     innovators. inQUbate has grown to a community of 50+
                     entrepreneurial-minded members with over 20+ ventures.
