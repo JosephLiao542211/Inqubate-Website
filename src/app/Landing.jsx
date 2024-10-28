@@ -1,45 +1,9 @@
-'use client'
-import { useEffect, useRef } from "react"
-
 import Image from "next/image"
 import Navigation from "./Navigation"
-import Sponsors from "./Sponsors"
 import Tube from "./Tube"
+import Slider from "./Slider"
 
 export default function Landing(){
-    const isInitialized = useRef(false);    // Track if component has been rendered already
-
-    useEffect(() => {
-        if (isInitialized.current) return;  // Only run useEffect once
-
-        // Setup
-        const slider = document.querySelector('.slider');
-        const slidingElements = [...slider.children];
-        const gapSize = parseInt(window.getComputedStyle(slider).gap);     // px 
-        const cycleWidth = slider.scrollWidth + gapSize;  // px
-
-        // Must ensure enough cycles to cover 2 x screen
-        let sliderScrollWidth = cycleWidth;   // px
-        while (sliderScrollWidth < 2*window.innerWidth) {
-            slidingElements.forEach(element => {
-                let dupe = element.cloneNode(true);
-                slider.appendChild(dupe);
-            });
-            sliderScrollWidth = slider.scrollWidth;
-        }
-
-        let cycles = 1;
-        while (window.innerWidth > cycles*cycleWidth) {
-            cycles++;
-        }
-
-        const START_POINT = -sliderScrollWidth + cycles*(cycleWidth);
-        const END_POINT = START_POINT + cycleWidth + 0*gapSize;
-
-        updateKeyframes(START_POINT, END_POINT);
-        isInitialized.current = true;
-    });
-
     return (
         <div className="mb-36">
         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -82,39 +46,13 @@ export default function Landing(){
                 </div>
 
                 <div className="grow-1 flex flex-col gap-16">
-                    {/* <Image src="innovate.svg" width={500} height={500} alt="INNOVATE"/>
-                    <Image src="disrupt.svg" width={500} height={500} alt="DISRUPT"/>
-                    <Image src="create.svg" width={500} height={500} alt="CREATE"/> */}
-
                     <Image className="animate-fade-in" src="innovate-disrupt-create.svg" width={500} height={500} alt="INNOVATE DISRUPT CREATE"/>
                 </div>
             </div>
             <div>
                 <h1 className="text-center text-stone-300 text-2xl font-thin tracking-widest mb-8 mt-16">PAST PARTNERS AND SPONSORS</h1>
-                <div className="slider-container overflow-hidden whitespace-nowrap">
-                    <div className="slider flex gap-6 w-max animate-slider">
-                        <Sponsors></Sponsors>
-                    </div>
-                </div>
+                <Slider/>
             </div>
         </div>
     )
-}
-
-function updateKeyframes(start, end) {
-    const stylesheets = [...document.styleSheets];
-    const sponsorSlideKeyframeName = 'slide';
-
-    stylesheets.forEach(sheet => {
-        const cssRules = [...sheet.cssRules];
-        cssRules.forEach(rule => {
-            if (rule.type === CSSRule.KEYFRAMES_RULE && rule.name === sponsorSlideKeyframeName) {
-                const ruleStyles = [...rule.cssRules];
-                ruleStyles.forEach(line => {
-                    if (line.keyText === '0%') { line.style.transform = `translateX(${start}px)` }
-                    if (line.keyText === '100%') { line.style.transform = `translateX(${end}px)` }
-                });
-            }
-        });
-    });
 }

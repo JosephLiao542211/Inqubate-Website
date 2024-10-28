@@ -1,6 +1,4 @@
-'use client';
 import Contactform from './contactform.jsx';
-import Image from 'next/image.js';
 import React from 'react';
 
 const Contact = () => {
