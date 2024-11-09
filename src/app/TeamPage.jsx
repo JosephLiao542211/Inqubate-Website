@@ -1,18 +1,17 @@
-import Image from "next/image";
 import Navigation from "./Navigation";
-import Tube from "./Tube";
-import Slider from "./Slider";
+import Image from "next/image";
+import TeamSlider from "./components/TeamSlider";
 
-export default function Landing() {
+export default function Team() {
   return (
     <div className="mb-36">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src="landing-morph-lines.svg"
         alt="webs"
-        className="-z-50 absolute"
+        className="-z-50 absolute w-full"
       />
-      <nav className="px-20 py-6 flex bg-none">
+      <nav className="px-48 py-6 flex bg-none">
         <Image
           src="inqubate.svg"
           alt="inqubate"
@@ -33,13 +32,13 @@ export default function Landing() {
           Contact Us
         </a>
       </nav>
-      <Tube />
+
       <Image
         src="red-gradient.svg"
         width={900}
         height={700}
         alt="red gradient"
-        className="absolute -z-30 top-0"
+        className="absolute -z-30 top-[800px]"
       />
       <Image
         src="blue-gradient.svg"
@@ -48,29 +47,19 @@ export default function Landing() {
         alt="blue gradient"
         className="absolute -z-30 right-0 top-0"
       />
-      <div className="flex h-[80vh] items-center justify-around">
-        <div className="animate-fade-in">
-          <h1 className="font-bold text-6xl w-96 leading-snug">
-            Queen&apos;s <br /> #1 Incubator
-          </h1>
-          <p>🚀 Innovate, Collaborate, & Succeed</p>
-        </div>
 
-        <div className="grow-1 flex flex-col gap-16">
-          <Image
-            className="animate-fade-in"
-            src="innovate-disrupt-create.svg"
-            width={500}
-            height={500}
-            alt="INNOVATE DISRUPT CREATE"
-          />
-        </div>
+      <div className="flex flex-col ml-80 mt-20">
+        <h1 className="text-6xl font-bold ml-10 mb-4">Our Team</h1>
+        <p className="mb-8 ml-10 mt-6 font-thin">
+          Indulge in the ultimate expression of sophistication with Luxe
+          Reserve, <br />
+          where every sip embodies the essence of luxury. Indulge in the <br />
+          ultimate expression of sophistication ..
+        </p>
       </div>
-      <div>
-        <h1 className="text-center text-stone-300 text-2xl font-thin tracking-widest mb-8 mt-16">
-          PAST PARTNERS AND SPONSORS
-        </h1>
-        <Slider />
+
+      <div className="mt-6">
+        <TeamSlider />
       </div>
     </div>
   );
